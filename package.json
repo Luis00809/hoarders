@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node server/server.js --ignore client",
     "start": "node server/server.js",
-    "dev": "concurrently \"npx tailwindcss -i ./client/src/styles/input.css -o ./client/src/styles/tailwind.css --watch\" \"cd server && npm run watch\" \"cd client && npm run start\"",
+    "dev": "concurrently \"npx tailwindcss -i ./client/src/styles/input.css -o ./client/src/styles/tailwind.css --watch\" \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
     "seed": "cd server && npm run seed"
